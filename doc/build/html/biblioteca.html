@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>biblioteca &#8212; biblioteca lana rhodes 1 documentation</title>
+    <link rel="stylesheet" href="_static/groundwork.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="biblioteca_lana_rhoades" href="biblioteca_lana_rhoades.html" />
+    <link rel="prev" title="Biblioteca" href="modules.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="biblioteca_lana_rhoades.html" title="biblioteca_lana_rhoades"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="Biblioteca"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">biblioteca lana rhodes 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">Biblioteca</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-biblioteca">
+<span id="biblioteca"></span><h1>biblioteca<a class="headerlink" href="#module-biblioteca" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="biblioteca.IDUtenti">
+<code class="sig-prename descclassname">biblioteca.</code><code class="sig-name descname">IDUtenti</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#biblioteca.IDUtenti" title="Permalink to this definition">¶</a></dt>
+<dd><p>metodo che restituisce tutti gli ID degli utenti</p>
+<p>Ritorna una lista degli ID di tutti gli utenti presenti nel database</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="biblioteca.Libro">
+<em class="property">class </em><code class="sig-prename descclassname">biblioteca.</code><code class="sig-name descname">Libro</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">titolo</span></em>, <em class="sig-param"><span class="n">autore</span></em>, <em class="sig-param"><span class="n">disponibilita</span></em><span class="sig-paren">)</span><a class="headerlink" href="#biblioteca.Libro" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="biblioteca.LibroPrestato">
+<em class="property">class </em><code class="sig-prename descclassname">biblioteca.</code><code class="sig-name descname">LibroPrestato</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">persona</span></em>, <em class="sig-param"><span class="n">titolo</span></em>, <em class="sig-param"><span class="n">autore</span></em>, <em class="sig-param"><span class="n">scadenza</span></em><span class="sig-paren">)</span><a class="headerlink" href="#biblioteca.LibroPrestato" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="biblioteca.Utente">
+<em class="property">class </em><code class="sig-prename descclassname">biblioteca.</code><code class="sig-name descname">Utente</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nome</span></em>, <em class="sig-param"><span class="n">cognome</span></em>, <em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">libriPresi</span></em><span class="sig-paren">)</span><a class="headerlink" href="#biblioteca.Utente" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="biblioteca.aggiungiLibro">
+<code class="sig-prename descclassname">biblioteca.</code><code class="sig-name descname">aggiungiLibro</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">titolo</span></em>, <em class="sig-param"><span class="n">autore</span></em><span class="sig-paren">)</span><a class="headerlink" href="#biblioteca.aggiungiLibro" title="Permalink to this definition">¶</a></dt>
+<dd><p>metodo che permette di aggiungere un libro al database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>titolo</strong> (<em>string</em>) – titolo del libro da aggiungere al database</p></li>
+<li><p><strong>autore</strong> (<em>string</em>) – autore del libro da aggiungere al database</p></li>
+</ul>
+</dd>
+</dl>
+<p>Ritorna un boolean per verificare il corretto funzionamento della funzione</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="biblioteca.aggiungiUtente">
+<code class="sig-prename descclassname">biblioteca.</code><code class="sig-name descname">aggiungiUtente</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nome</span></em>, <em class="sig-param"><span class="n">cognome</span></em><span class="sig-paren">)</span><a class="headerlink" href="#biblioteca.aggiungiUtente" title="Permalink to this definition">¶</a></dt>
+<dd><p>metodo che permette di aggiungere un utente al database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nome</strong> (<em>string</em>) – nome dell’utente da aggiungere al database</p></li>
+<li><p><strong>cognome</strong> (<em>string</em>) – cognome dell’utente da aggiungere al database</p></li>
+</ul>
+</dd>
+</dl>
+<p>Ritorna un boolean per verificare il corretto funzionamento della funzione</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="biblioteca.cercaPerNomeUtente">
+<code class="sig-prename descclassname">biblioteca.</code><code class="sig-name descname">cercaPerNomeUtente</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nomeUtente</span></em><span class="sig-paren">)</span><a class="headerlink" href="#biblioteca.cercaPerNomeUtente" title="Permalink to this definition">¶</a></dt>
+<dd><p>metodo che restituisce una lista di utenti con lo stesso nome</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>nomeUtente</strong> (<em>string</em>) – stringa contenente il nome dell’utente</p>
+</dd>
+</dl>
+<p>Ritorna una lista degli utenti di tipo Utente con lo stesso nomeUtente</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="biblioteca.cercaPerTitolo">
+<code class="sig-prename descclassname">biblioteca.</code><code class="sig-name descname">cercaPerTitolo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">titolo</span></em><span class="sig-paren">)</span><a class="headerlink" href="#biblioteca.cercaPerTitolo" title="Permalink to this definition">¶</a></dt>
+<dd><p>metodo che restituisce una lista di libri con lo stesso titolo sotto forma di oggetti Libro</p>
+<p>Ritorna una lista di oggetti Libro</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="biblioteca.getLibri">
+<code class="sig-prename descclassname">biblioteca.</code><code class="sig-name descname">getLibri</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#biblioteca.getLibri" title="Permalink to this definition">¶</a></dt>
+<dd><p>metodo che restituisce una lista di libri presenti nel database</p>
+<p>Ritorna una lista di libri di tipo Libro</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="biblioteca.getLibriPrestati">
+<code class="sig-prename descclassname">biblioteca.</code><code class="sig-name descname">getLibriPrestati</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#biblioteca.getLibriPrestati" title="Permalink to this definition">¶</a></dt>
+<dd><p>metodo che restituisce una lista di tutti i libri prestati dalla biblioteca</p>
+<p>Ritorna una lista di libri di tipo LibroPrestato</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="biblioteca.getUtenti">
+<code class="sig-prename descclassname">biblioteca.</code><code class="sig-name descname">getUtenti</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#biblioteca.getUtenti" title="Permalink to this definition">¶</a></dt>
+<dd><p>metodo che restituisce una lista di tutti gli utenti presenti nel database</p>
+<p>Ritorna una lista di utenti di tipo Utente</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="biblioteca.infoUtente">
+<code class="sig-prename descclassname">biblioteca.</code><code class="sig-name descname">infoUtente</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ID</span></em><span class="sig-paren">)</span><a class="headerlink" href="#biblioteca.infoUtente" title="Permalink to this definition">¶</a></dt>
+<dd><p>metodo che permette di restituire tutte le informazioni riguardanti un utente passando l’ID</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ID</strong> (<em>string</em>) – ID dell’utente</p>
+</dd>
+</dl>
+<p>Ritorna una lista contenente le informazioni sull’utente</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="biblioteca.mostraLibriDisponibili">
+<code class="sig-prename descclassname">biblioteca.</code><code class="sig-name descname">mostraLibriDisponibili</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#biblioteca.mostraLibriDisponibili" title="Permalink to this definition">¶</a></dt>
+<dd><p>metodo che restituisce una lista di tutti i libri presenti nel database sottoforma di oggetti di tipo libro</p>
+<p>Ritorna una lista di oggetti Libro</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="biblioteca.prendiPrestito">
+<code class="sig-prename descclassname">biblioteca.</code><code class="sig-name descname">prendiPrestito</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">titolo</span></em>, <em class="sig-param"><span class="n">IDUtente</span></em><span class="sig-paren">)</span><a class="headerlink" href="#biblioteca.prendiPrestito" title="Permalink to this definition">¶</a></dt>
+<dd><p>metodo che permette di prendere in prestito un libro seguendo un iter preciso</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>titolo</strong> (<em>string</em>) – titolo del libro da prenotare</p></li>
+<li><p><strong>IDUtente</strong> (<em>string</em>) – ID dell’utente</p></li>
+</ul>
+</dd>
+</dl>
+<p>Ritorna un boolean per verificare il corretto funzionamento della funzione</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="biblioteca.prestitiUtente">
+<code class="sig-prename descclassname">biblioteca.</code><code class="sig-name descname">prestitiUtente</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ID</span></em><span class="sig-paren">)</span><a class="headerlink" href="#biblioteca.prestitiUtente" title="Permalink to this definition">¶</a></dt>
+<dd><p>metodo che restituisce una lista di libri prestati all’utente inserito</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ID</strong> (<em>string</em>) – ID dell’utente</p>
+</dd>
+</dl>
+<p>Ritorna una lista di libri di tipo LibroPrestato contenente tutti i libri in fase di prestito</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="biblioteca.restituisciPrestito">
+<code class="sig-prename descclassname">biblioteca.</code><code class="sig-name descname">restituisciPrestito</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">IDUtente</span></em>, <em class="sig-param"><span class="n">titolo</span></em><span class="sig-paren">)</span><a class="headerlink" href="#biblioteca.restituisciPrestito" title="Permalink to this definition">¶</a></dt>
+<dd><p>metodo che permette di restituire un libro passandogli l’ID dell’utente che ha fatto il prestito e il titolo del libro</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>IDUtente</strong> (<em>string</em>) – ID dell’utente</p></li>
+<li><p><strong>titolo</strong> (<em>string</em>) – titolo del libro</p></li>
+</ul>
+</dd>
+</dl>
+<p>Ritorna un boolean per verificare il corretto funzionamento della funzione</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="biblioteca.rimuoviLibro">
+<code class="sig-prename descclassname">biblioteca.</code><code class="sig-name descname">rimuoviLibro</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">titolo</span></em><span class="sig-paren">)</span><a class="headerlink" href="#biblioteca.rimuoviLibro" title="Permalink to this definition">¶</a></dt>
+<dd><p>metodo che permette di rimuovere un libro dal database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>titolo</strong> (<em>string</em>) – titolo del libro da rimuovere dal database</p>
+</dd>
+</dl>
+<p>Ritorna un boolean per verificare il corretto funzionamento della funzione</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="biblioteca.rimuoviUtente">
+<code class="sig-prename descclassname">biblioteca.</code><code class="sig-name descname">rimuoviUtente</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ID</span></em><span class="sig-paren">)</span><a class="headerlink" href="#biblioteca.rimuoviUtente" title="Permalink to this definition">¶</a></dt>
+<dd><p>metodo che permette di rimuovere un utente dal database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ID</strong> (<em>string</em>) – ID dell’utente da rimuovere dal database</p>
+</dd>
+</dl>
+<p>Ritorna un boolean per verificare il corretto funzionamento della funzione</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="modules.html"
+                        title="previous chapter">Biblioteca</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="biblioteca_lana_rhoades.html"
+                        title="next chapter">biblioteca_lana_rhoades</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/biblioteca.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="biblioteca_lana_rhoades.html" title="biblioteca_lana_rhoades"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="Biblioteca"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">biblioteca lana rhodes 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >Biblioteca</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, peaky blinders.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.4.
+    </div>
+  </body>
+</html>
